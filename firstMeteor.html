@@ -1,0 +1,27 @@
+<head>
+    <title>firstMeteor</title>
+</head>
+
+<body>
+    <h1>Tasks of the day</h1>{{> loginButtons}}
+    {{#if currentUser}}
+    {{> tasks}}
+    {{> history}}
+    {{/if}}
+</body>
+
+<template name="tasks">
+    {{#with user}}
+    <h2>Total: <span>{{total}}</span></h2>
+    <h2>Must: <span>{{must}}</span></h2>
+    <input type="text" id="taskName" class="task"/>
+    <button type="submit" id="taskButton">Enter task</button>
+    {{/with}}
+</template>
+<template name="history">
+    <div class="scroll">
+        {{#each taskItem}}
+        <li>{{value}} {{date}}</li>
+        {{/each}}
+    </div>
+</template>

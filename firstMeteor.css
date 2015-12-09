@@ -1,0 +1,46 @@
+body {
+	color: #665544;
+	font-family: Helvetica;
+	background-color: #d4d0c6;
+	background-image: url('../images/backdrop.gif');
+	text-align: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+}
+
+button {
+	background: #3498db;
+    padding: 3px 12px;
+    margin-bottom: 3px;
+    margin-left: -5px;
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0px solid #2980b9;
+    color: white;
+    height: 30px;
+}
+
+li {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+div {
+    text-align: left;
+}
+
+div.scroll {
+	line-height: 30px;
+	height: 200px;
+	width: 390px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #ccc;
+    margin: 0 auto;
+}
